@@ -1,0 +1,422 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito);.catal {
+  width: 100%;
+  top: 50px;
+  position: relative;
+}
+
+.catal .img img {
+  width: 100%;
+}
+
+.catal .info {
+  padding-left: 15px;
+}
+
+.catal .info select {
+  width: 145px;
+}
+
+.catal .info div:nth-child(1) {
+  border-bottom: 1px solid #d0d0d0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.catal .info div:nth-child(1):before {
+  content: "C$ ";
+}
+
+.catal .info div:nth-child(2):before {
+  font-weight: bold;
+  content: "Cod: ";
+}
+
+.catal .info div:nth-child(3):before {
+  font-weight: bold;
+  content: "Materiales: ";
+}
+
+.catal .info div:nth-child(4) select {
+  margin-left: 12px;
+}
+
+.catal .info div:nth-child(4):before {
+  font-weight: bold;
+  content: "Colores: ";
+}
+
+.catal .info div:nth-child(5) select {
+  margin-left: 35px;
+}
+
+.catal .info div:nth-child(5):before {
+  font-weight: bold;
+  content: "Talla: ";
+}
+
+.catal .info div:nth-child(6):before {
+  font-weight: bold;
+  content: "Cantidad: ";
+}
+
+.catal .info div:nth-child(7):before {
+  font-weight: bold;
+  content: "Descripcion: ";
+}
+
+.catal .p-btn {
+  text-align: end;
+  padding-right: 15px;
+}
+
+.catal .p-btn a {
+  padding: 10px 50px 10px 50px;
+  border: none;
+  background-color: cadetblue;
+  color: white;
+  text-decoration: none;
+}
+
+.catal .p-btn a i {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.cat-contenedor {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 100px;
+  flex-flow: wrap;
+}
+
+.cat-contenedor a {
+  text-decoration: none;
+}
+
+.cat-contenedor .items {
+  width: 100px;
+  height: 100px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #ccc;
+  border: 1px solid #f0f0f0;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.cat-contenedor .items:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cat-contenedor .items-preview {
+  background-color: #ccc;
+  border: 1px solid #f0f0f0;
+  margin-right: 10px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 160px;
+  height: 130px;
+  margin-bottom: 70px;
+}
+
+.cat-contenedor .items-preview:active {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.cat-contenedor .items-preview div:nth-child(1) {
+  -webkit-transform: translateY(132px) !important;
+          transform: translateY(132px) !important;
+  color: white;
+  font-size: small;
+  text-transform: capitalize;
+}
+
+.tit {
+  margin-bottom: 13px;
+  margin-top: 5px;
+  text-transform: capitalize;
+  -webkit-animation-name: opaci;
+          animation-name: opaci;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes opaci {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opaci {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.tit i {
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+}
+
+.img-catal .img-featured {
+  overflow: scroll;
+}
+
+.img-catal .img-featured ul {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.img-catal .img-featured ul li img {
+  width: 500px;
+}
+
+.img-catal .img-catal-item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.img-catal .img-catal-item div {
+  margin-right: 5px;
+  border: 1px solid aliceblue;
+}
+
+.item-tittle {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  width: auto;
+  margin: auto;
+  color: white;
+  margin-bottom: 10px;
+  background: darkcyan;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-animation-name: springy-text;
+          animation-name: springy-text;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes springy-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes springy-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  position: fixed;
+  box-shadow: 0 0 2px 2px #a6a6a6;
+  z-index: 2;
+}
+
+header .header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+header .header .icon-menu {
+  padding-left: 15px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+header .header div:nth-child(2) {
+  padding-right: 15px;
+  color: white;
+  align-self: center;
+}
+
+header .header div:nth-child(2) i {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+header .header div:nth-child(2) a {
+  text-decoration: none;
+  color: white;
+  background-color: cadetblue;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+
+header .header div:nth-child(2) a:focus {
+  background-color: #8bcacc;
+}
+
+#aside-menu {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translatex(-100%);
+          transform: translatex(-100%);
+  background-color: #e3e3e3;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  top: 50px;
+  z-index: 2;
+  position: fixed;
+}
+
+#aside-menu ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+#aside-menu ul li {
+  border-bottom: 1px solid #d5d5d5;
+  padding: 10px;
+}
+
+#aside-menu ul li i {
+  margin-right: 5px;
+}
+
+#aside-menu ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+}
+
+#aside-menu .shipping-active {
+  color: orange;
+}
+
+#aside-menu .shipping-active i {
+  -webkit-animation: movimiento 2s infinite;
+          animation: movimiento 2s infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+          animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3);
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes movimiento {
+  from {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+
+  to {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+#aside-menu .shipping-active:after {
+  content: "Envia tu pedido";
+  font-size: 0.7rem;
+  background-color: orange;
+  color: white;
+  padding: 5px;
+}
+
+#aside-menu.on {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+}
+
+.select-pdv {
+  margin: 0 auto;
+  -webkit-transform: translateY(30vh);
+          transform: translateY(30vh);
+  text-align: center;
+}
+
+.select-pdv input {
+  width: 80%;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #616161;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.select-pdv select {
+  width: 80%;
+  height: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #616161;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.select-pdv .select-btn {
+  padding-top: 30px;
+}
+
+.select-pdv .select-btn button {
+  padding: 10px 50px 10px 50px;
+  border: none;
+  background-color: cadetblue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 1px 2px 0px #525e56;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.select-pdv .select-btn button:focus {
+  background-color: #8bcacc;
+}
+

@@ -1,0 +1,126 @@
+header
+{
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	position: fixed;
+	box-shadow: 0 0 2px 2px #a6a6a6;
+	z-index: 2;
+
+	
+   .header
+   {
+
+   	display: flex;
+	justify-content: space-between;
+         
+         .icon-menu
+	{
+		padding-left: 15px;
+		transform: translateY(5px);
+	}
+
+	div:nth-child(2)
+	{
+		 padding-right: 15px;
+		 color: white;
+         align-self: center;
+
+         i
+         {
+         	transform: translateY(5px);
+         }
+
+	     a
+	     {
+	     	text-decoration: none;
+	     	color: white;
+			background-color: cadetblue;
+			padding: 5px 10px 5px 10px;
+			border-radius: 5px;
+
+			&:focus
+	    {
+	    	background-color: #8bcacc;
+	    }
+	     }
+	}
+
+   }
+}
+
+#aside-menu
+	{
+		width: 100%;
+		height: 100%;
+		transform: translatex(-100%);
+		background-color: #e3e3e3;
+		position: absolute;
+		transition: all  .5s;
+		top: 50px;
+		z-index: 2;
+		position: fixed;
+
+		ul
+		{
+			list-style: none;
+			
+			padding-left: 15px;
+
+			li
+			{ 
+				border-bottom: 1px solid #d5d5d5;
+				padding: 10px;
+				i
+				{
+					margin-right: 5px;
+				}
+				a
+				{
+					text-decoration: none;
+					font-size: 1.5rem;
+					color: black;
+				}
+			}
+		}
+
+		.shipping-active
+		{
+			color: orange;
+			i
+			{
+				
+				animation: movimiento 2s infinite;
+        		
+        		animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 3.0);
+        		
+        		@keyframes movimiento {
+        	from {transform: translateX(-8px);}
+  			to {transform: translateX(0px);}
+        
+            }
+			}
+
+			&:after
+			{
+				content: 'Envia tu pedido';
+				font-size: .7rem;
+				background-color: orange;
+				color: white;
+				padding: 5px;
+			}
+        
+        
+        
+        
+        
+
+        
+		}
+	}
+
+	#aside-menu.on
+{
+   
+    transform: translateX(0px);  
+}
